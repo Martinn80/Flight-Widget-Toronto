@@ -24,7 +24,7 @@ axios(options).then(function (response) {
         console.log(response.data)
         // console.log('data',item.status, item.destination, item.airline, item.departing, item.gate)
     })
-    res.json(response.data.slice(0,10))
+    res.json(response.data.slice(0,12))
 }).catch(function (error) {
 	console.error(error)
 });

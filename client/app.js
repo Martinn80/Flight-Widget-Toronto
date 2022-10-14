@@ -34,13 +34,14 @@ const populateTable = (flights) => {
             for (const [index, letter] of word.entries()){
                 const letterElement = document.createElement('div')
 
-                letterElement.textContent = letter
-                tableCell.append(letterElement)
+                setTimeout(() => {
+                    letterElement.classList.add('flip')
+                    letterElement.textContent = letter
+                    tableCell.append(letterElement)
+                }, 100 * index)
             }
             tableRow.append(tableCell)
         }
-
-
         tableBody.append(tableRow)
     }
 }

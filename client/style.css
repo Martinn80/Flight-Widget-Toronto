@@ -6,16 +6,24 @@
     font-size: 35px;
 }
 
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+}
+
 body {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background-color: rgb(251, 199, 127);
 }
 
 h1 {
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .departures {
@@ -35,4 +43,40 @@ h1 {
     min-width: 20px;
     height: 40px;
     float: left;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+#time {
+    width: 160px;
+}
+
+#destination {
+    width: 700px;
+}
+
+#flight {
+    width: 305px;
+}
+
+#gate {
+    width: 135px;
+}
+
+#remarks {
+    width: 260px;
 }
