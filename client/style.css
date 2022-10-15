@@ -27,6 +27,10 @@ h1 {
     font-size: 40px;
 }
 
+#planeIcon {
+    font-size: 80px;
+}
+
 .departures {
     background-color: rgb(6, 6, 6);
     border-radius: 10px;
@@ -72,7 +76,7 @@ h1 {
 }
 
 #flight {
-    width: 205px;
+    width: 305px;
 }
 
 #gate {
